@@ -1,0 +1,74 @@
+.container {
+  width: 100%;       /* Ամբողջ էկրանի լայնությամբ */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.table {
+  width: 100%;       /* Աղյուսակը տարածվում է ամբողջ container-ով */
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  table-layout: auto; /* Թույլ է տալիս սյունակներին ավտոմատ հարմարվել */
+}
+
+.headRow {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.th, .td {
+  padding: 10px 15px; /* Նորմալ padding՝ ոչ շատ մեծ, ոչ շատ փոքր */
+  border: 1px solid #dddddd;
+  vertical-align: middle; /* Որպեսզի ամեն ինչ լինի մեջտեղում */
+}
+
+.actionCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;               
+  min-width: 80px;        
+}
+
+.vue, .deleteBtn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;         /* Օպտիմալ չափս սիմվոլների համար */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.vue {
+  color: #c1a26e;
+}
+
+.deleteBtn {
+  color: #f44336;
+}
+
+.vue:hover, .deleteBtn:hover {
+  transform: scale(1.15); /* Թեթևակի մեծացում */
+}
+
+/* Որպեսզի նկարների սյունակը շատ մեծ չլինի */
+.imageCell {
+  width: 70px;
+  text-align: center;
+}
+
+.imageCell img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.rov1{
+  display: flex;
+}
