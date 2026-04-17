@@ -12,7 +12,7 @@ export default function viewPage() {
     const [student,setStudent]=useState({})
     useEffect(() => {
         const loadingData= async()=>{
-            const res = await axios.get(`students/${id}`)
+            const res = await axios.get(`students/${id}/`)
             setStudent(res.data)
         }
         loadingData()
